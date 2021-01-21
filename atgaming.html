@@ -1,0 +1,788 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>AT GAMING</title>
+    </head>
+    <style type="text/css">
+    *{
+    box-sizing:box-border;
+    margin:0px;
+    padding:0px;
+    
+    }
+    html,body{
+    overflow-x:hidden;
+    height:100%;
+    
+    }
+     body{
+     background:url("https://i.ibb.co/Y25Z68D/69f9e9afdabacb960185c5aaea3af619.gif") ; 
+     background-size:cover;
+     
+     padding:0px;
+     margin:0px;
+     }
+     
+     
+     
+ 
+     #openslidebarMenu:checked ~ #slidebar{
+         transform:translateX(0px);
+     
+     }
+    .main{
+    height:100%;
+    margin-top:60px;
+    padding:10px 50px;
+    }
+    #slidebar{
+    height:100%;
+    width:100px;
+    position:fixed;
+    margin-top:57px;
+    background-color:rgb(0,0,0,0.3);
+    transform:translateX(-100px);
+    transition:transform 500ms ease-in-out;
+    }
+    .menu li {
+     color:#fff;
+     border-bottom:1px solid white;
+    }
+    .menu li a{
+    color:#fff;
+    display:block;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:5px;
+    }
+    .slidebarIcontoggle{
+    width:25px;
+    height:10px;
+    position:absolute;
+    z-index:20;
+    margin-top:20px;
+    margin-left:20px;
+  
+    }
+    .spinner{
+    height:3px;
+    background-color:#fff;
+    transition:all 0.3s;
+    border-radius:10px;
+    }
+    .spinner.middle,
+    .spinner.bottom{
+    margin-top:3px;
+    border-radius:10px;
+    }
+    input{
+    margin-left:-16px;
+    }
+    #openslidebarMenu:checked ~ .slidebarIcontoggle > .spinner.middle{
+    opacity:0;
+    transition:transform 100ms;
+    }
+    #openslidebarMenu:checked ~ .slidebarIcontoggle > .spinner.top{
+    transform:rotate(135deg);
+    margin-top:8px;
+    transition:transform 500ms;
+    }
+    #openslidebarMenu:checked ~ .slidebarIcontoggle > .spinner.bottom{
+    transform:rotate(-135deg);
+    margin-top:-8px;
+    transition:transform 500ms;
+    }
+    .background h1{
+      z-index:10;
+      background: orange;
+      margin-top:-22px;
+      width:100%;
+      height:60px;
+      position:fixed;
+    }
+    .background h1 img{
+    width:60px;
+    height:60px;
+    margin-left:45px;
+    
+    
+    }
+    h2{
+    z-index:100;
+    margin-top:-50px;
+    margin-left:105px;
+    font-size:35px;
+    position: fixed;
+    margin-top:-5px;
+    }
+
+   .download
+   {
+    margin-top:25px;
+    padding:7px;
+    border:4px solid #03e9f4;
+    border-radius:26px;
+    font-size:20px;
+    text-decoration:none;
+    color:#03e9f4;
+    transition:500ms;
+ 
+   }
+   .download:hover{
+   box-shadow:0 2px 30px #03e9f4 inset,0 2px 30px #03e9f4,0 2px 30px #03e9f4 inset,0 2px 30px #03e9f4;
+   
+   
+   }
+   .image img{
+   margin-top:20px;
+    height:340px;
+    width:340px;
+   
+   }
+   .img img{
+    margin-top:10px;
+    width:100%;
+   }
+   .fauji img{
+   opacity:0;
+   width:0%;
+   
+   }
+   .free h3{
+   font-size:34px;
+   
+   }
+   hr{
+   width:100%;
+   height:10px;
+   background-color: black;
+   margin-top:-10px;
+   border-radius:10px;
+   }
+   
+    .pubg{
+    position: relative;
+    display: inline-block;
+    font-size:24px;
+    text-decoration:none;
+    color:#03e9f4;
+    text-transform: uppercase;
+    latter-spacing:4px;
+    overflow: hidden;
+    transition:0.3s;
+    margin-left:20px;
+    margin-top:5px;
+    
+    }
+    .pubg:hover{
+    color: black;
+    background:#03e9f4;
+    box-shadow:0 0 10px #03e9f4,0 0 40px #03e9f4,0 0 80px #03e9f4;
+    transition-delay:0s;
+    
+    }
+    .pubg span{
+    position: absolute;
+    display: block;
+    }
+    .pubg span:nth-child(1){
+    top:0;
+    left:-100%;
+    width:100%;
+    height:3px;
+   
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+    
+    }
+    
+    @keyframes animate1{ 
+    0%{
+    left:-100%;
+    }
+    50%,100%{
+    
+    left:100%;
+    
+    }
+    
+    }
+    .pubg span:nth-child(2){
+    top:-100%;
+    right:0;
+    width:3px;
+    height:100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    transition-delay:0.25s;
+    }
+    
+    
+    @keyframes animate2{ 
+    0%{
+    top:-100%;
+    }
+    50%,100%{
+    
+    top:100%;
+    
+    }
+    
+    }
+    .pubg span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:3px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+  
+    }
+    
+    @keyframes animate3{ 
+    0%{
+    right:-100%;
+    }
+    50%,100%{
+    
+    right:100%;
+    
+    }
+    
+    }
+    .pubg span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:3px;
+    height:100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+
+    }
+    
+    @keyframes animate4{ 
+    0%{
+    bottom:-100%;
+    }
+    50%,100%{
+    
+    bottom:100%;
+    
+    }
+    
+    }
+    image3 img{
+    
+    }
+    input[type="checkbox"]{
+    z-index:-100;
+    -webkit-appearance:none;
+    visibility:hidden;
+    display:none;
+    
+    }
+    .check{
+    position:relative;
+    display: block;
+    width:64px;
+    height:24px;
+    background: silver;
+    border:4px solid gray;
+    border-radius:23px;  
+    z-index:-10;
+    }
+    input[type="checkbox"]:checked ~ .check
+    {
+     box-shadow: 0 0 0 12000px black;
+          
+     }
+ 
+    .check:before{
+    content:"";
+    position: absolute;
+    width:32px;
+    height:24px;
+    background:#032c3e;
+    border-radius:20px;
+    transition:500ms;
+    }
+    input[type="checkbox"]:checked ~ .check:before
+    {
+    transform:translateX(100%);
+    
+    }
+    @media only screen and (min-width: 480px) {
+    *{
+    box-sizing:box-border;
+    margin:0px;
+    padding:0px;
+    }
+    html,body{
+    overflow-x:hidden;
+    height:100%;
+    }
+    body{
+    background:url("https://i.ibb.co/Y25Z68D/69f9e9afdabacb960185c5aaea3af619.gif" ) ; 
+    background-size:cover;
+    padding:0px;
+    margin:0px;
+    }
+    
+    
+    
+    
+    #openslidebarMenu:checked ~ #slidebar
+    {
+    transform:translateX(0px);
+    
+    }
+    .main
+    {
+    height:100%;
+    margin-top:60px;
+    padding:10px 50px;
+    }
+    #slidebar{
+    height:100%;
+    width:250px;
+    position:fixed;
+    margin-top:90px;
+    background-color:rgb(0,0,0,0.3);
+    transform:translateX(-250px);
+    transition:transform 500ms ease-in-out;
+    }
+    .menu li {
+    color:#fff;
+    border-bottom:1px solid white;
+    font-size:40px;
+    }
+    .menu li a{
+    color:#fff;
+    display:block;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:10px;
+    }
+    .slidebarIcontoggle{
+    width:50px;
+    height:60px;
+    position:absolute;
+    z-index:20;
+    margin-top:30px;
+    margin-left:30px;
+    
+    }
+    .spinner{
+    height:6px;
+    background-color:#fff;
+    transition:all 0.3s;
+    border-radius:10px;
+    }
+    .spinner.middle,
+    .spinner.bottom{
+    margin-top:6px;
+    border-radius:10px;
+    }
+    input{
+    margin-left:-16px;
+    }
+    #openslidebarMenu:checked ~ .slidebarIcontoggle > .spinner.middle{
+    opacity:0;
+    transition:transform 100ms;
+    }
+    #openslidebarMenu:checked ~ .slidebarIcontoggle > .spinner.top{
+    transform:rotate(135deg);
+    margin-top:13px;
+    transition:transform 500ms;
+    }
+    #openslidebarMenu:checked ~ .slidebarIcontoggle > .spinner.bottom{
+    transform:rotate(-135deg);
+    margin-top:-14px;
+    transition:transform 500ms;
+    }
+    .background h1{
+    z-index:10;
+    background: orange;
+    margin-top:-45px;
+    width:100%;
+    height:110px;
+    position:fixed;
+    }
+    .background h1 img{
+    width:120px;
+    height:100px;
+    margin-left:90px;
+    margin-top:20px;
+    
+    
+    }
+    h2 {
+    z-index:100;
+    margin-left:260px;
+    font-size:80px;
+    position: fixed;
+    margin-top:-10px;
+    latter-spacing:6px;
+    margin-top:-30px;
+    }
+    
+    
+   
+    .image img{
+    opacity:0;
+    margin-top:30px;
+    height:300px;
+    width:0%;
+    height:0%;
+    }
+    .fauji img{
+    margin-top:40px;
+    width:100%;
+    height:300px;
+    opacity:100%;
+    
+    }
+    .img img{
+    margin-top:10px;
+    margin-left:30px;
+    width:900px;
+    height:500px;
+    }
+    hr{
+    width:100%;
+    height:10px;
+    background-color: black;
+    margin-top:-10px; 
+    border-radius:10px;
+    }
+    
+    .pubg{
+    position: relative;
+    display: inline-block;
+    font-size:60px;
+    text-decoration:none;
+    color:#03e9f4;
+    text-transform: uppercase;
+    latter-spacing:4px;
+    overflow: hidden;
+    transition:0.3s;
+    margin-left:20px;
+    margin-top:5px;
+    background: black;
+    }
+    .pubg:hover{
+    color: black;
+    background:#03e9f4;
+    box-shadow:0 0 10px #03e9f4,0 0 40px #03e9f4,0 0 80px #03e9f4;
+    transition-delay:0s;
+    
+    }
+    .pubg span{
+    position: absolute;
+    display: block;
+    }
+    .pubg span:nth-child(1){
+    top:0;
+    left:-100%;
+    width:100%;
+    height:6px;
+    
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+    
+    }
+    
+    @keyframes animate1{ 
+    0%{
+    left:-100%;
+    }
+    50%,100%{
+    
+    left:100%;
+    
+    }
+    
+    }
+    .pubg span:nth-child(2){
+    top:-100%;
+    right:0;
+    width:6px;
+    height:100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    transition-delay:0.25s;
+    }
+    
+    
+    @keyframes animate2{ 
+    0%{
+    top:-100%;
+    }
+    50%,100%{
+    
+    top:100%;
+    
+    }
+    
+    }
+    .pubg span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:6px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+   
+    }
+    
+    @keyframes animate3{ 
+    0%{
+    right:-100%;
+    }
+    50%,100%{
+    
+    right:100%;
+    
+    }
+    
+    }
+    .pubg span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:6px;
+    height:100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+   
+    }
+    
+    @keyframes animate4{ 
+    0%{
+    bottom:-100%;
+    }
+    50%,100%{
+    
+    bottom:100%;
+    
+    }
+    .free {
+    width:600px;
+    margin-left:230px;
+    }
+    .free h3{
+    font-size:43px;
+    
+    }
+    .head3{
+    font-size:40px;
+    width:250px;
+    margin-left:700px;
+    
+    
+    }
+    .image3 img{
+    width:680px;
+    height:700px;
+    margin-top:-770;
+    }
+    .download
+    {
+    margin-top:-30px;
+    padding:7px;
+    border:4px solid #03e9f4;
+    border-radius:26px;
+    font-size:25px;
+    text-decoration:none;
+    color:#03e9f4;
+    }
+    .download:hover{
+    box-shadow:0 2px 30px #03e9f4 inset,0 2px 30px #03e9f4,0 2px 30px #03e9f4 inset,0 2px 30px #03e9f4;
+    
+    }
+    .br{
+    intensity:0;
+    }
+    input[type="checkbox"]{
+    z-index:-100;
+    -webkit-appearance:none;
+    visibility:hidden;
+    display:none;
+    
+    }
+    .check{
+    position:relative;
+    display: block;
+    width:64px;
+    height:24px;
+    background: silver;
+    border:4px solid gray;
+    border-radius:23px;
+    margin-top:-1428px;
+    margin-left:246px;
+    z-index:-10;
+    }
+    input[type="checkbox"]:checked ~ .check
+    {
+    background: #fff;
+    box-shadow:0 0 0 120000px black;
+    
+    }
+    .check:before{
+    content:"";
+    position: absolute;
+    width:32px;
+    height:24px;
+    background:#032c3e;
+    border-radius:20px;
+    transition:500ms;
+    }
+    input[type="checkbox"]:checked ~ .check:before
+    {
+    transform:translateX(100%);
+    
+    }
+    input[type="checkbox"]{
+    z-index:-100;
+    -webkit-appearance:none;
+    visibility:hidden;
+    display:none;
+    
+    }
+    .check{
+    position:relative;
+    display: block;
+    width:64px;
+    height:24px;
+    background: silver;
+    border:4px solid gray;
+    border-radius:23px;  
+    
+    }
+    input[type="checkbox"]:checked ~ .check
+    {
+    box-shadow: 0 0 0 12000px black;
+    
+    }
+    
+    .check:before{
+    content:"";
+    position: absolute;
+    width:32px;
+    height:24px;
+    background:#032c3e;
+    border-radius:20px;
+    transition:500ms;
+    }
+    input[type="checkbox"]:checked ~ .check:before
+    {
+    transform:translateX(100%);
+    
+    }
+    }
+    </style>
+<body>
+        <div class="header"> <h1></h1></div>
+        <input type="checkbox" id="openslidebarMenu">
+         <label for="openslidebarMenu" class="slidebarIcontoggle">
+            <div class="spinner top"></div>
+             <div class="spinner middle"></div>
+              <div class="spinner bottom"></div>
+            
+        </label>
+        <div id="slidebar">
+        <ul class="menu">
+        <li><a href="noname(1)" >Home</a></li>
+        <br>
+        <li><a href="mailto:rscourier33@gmail.com" >Email</a></li>
+        <br>
+        <li><a href="https://youtube.com/channel/UCidOP-VPrL6UEQ5VkHuk8oA" >CHENNAL</a></li>
+  
+        </ul>
+        
+        </div>
+        </header>
+        <br />
+       
+        <main>
+        <div class="background">
+        <h1><img src="https://i.ibb.co/Z6srvQB/20201118-212901.png"></h1>
+        <h2>AT GAMING</h2>
+        </div>
+        <div class="image">
+        <img src="https://i.ibb.co/Z6srvQB/20201118-212901.png" alt="LOGO" "float="left" width="270px" height="230px" >
+        <hr></main>
+        </div>
+        <div class="fauji">
+         <img src="https://i.ibb.co/rm5QBXv/images-3.jpg">
+        </div>
+        <div class="free"style="background-color: silver">
+        <h3 style="color:blue;">PLAY GTA 5 ON ANDROID LINK BILLOW </h3>
+        <!--single-line comment-->
+        </div>
+        <center>
+        <div class="img">
+        <img src="https://www.linkpicture.com/q/gta5.jpg" width="310px" height="200px" style="float: left" width="300px" height="190px"></img>
+        </div>
+        <b href="https://youtu.be/jvuVglZAP1A">
+      </b></center>
+      <a class="pubg"href="https://youtu.be/jvuVglZAP1A">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           CLICK HERE
+           </a>
+      <br><br><br>
+      <hr>
+      <br>
+     <h3 class="head3"style="color:white">IF you want to download preset
+     of my logo you can download through clicking 
+     Download button given below </h3>
+     <br><br>
+     <div class="image3">
+     <img src="https://i.ibb.co/vZkWqzR/tttt.jpg" alt="tttt" border="0" width="320px"; height="300px"; margin-top:-30px">
+     </div>
+     <br class="br">
+     
+     <a class="download"href="A.zip"download="Priset">
+        DOWNLOAD
+    </a>
+     <br><br>
+     <h2 style="color: yellow"> PLAY PUBG ON LOW END DIVICE</h2>
+     <iframe width="310" height="250" src="https://www.youtube.com/embed/tJnOL142OaA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+      
+      <label>
+      <input type="checkbox">
+      <span class="check"></span>
+      </label>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
